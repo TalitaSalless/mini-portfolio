@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=VT323&display=swap');
+
+
+body{
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'DM Sans', sans-serif;
+    color: #f3f3f3;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao{
+    background-color:#020B40; 
+    width: 370px;
+    border: 3px solid #020B40;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img{
+    width: 120px;
+    border-radius: 100px;
+    box-shadow: rgba(212, 17, 238, 0.35) 0px 5px 15px;
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 26px;
+}
+
+.cartao .minhas-informacoes .cargo{
+    font-size: 20px;
+    color: #b8bbc5;
+    font-weight: 400;
+}
+
+.cartao .conteudo{
+    margin-top: 15px;
+}
+
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img{
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #2a2788;
+}
+
+.cartao .informacoes-abas{
+    background-color: #2a2788;
+}
+
+.cartao .abas .aba:hover{
+    background-color: #ac98f3;
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #b8bbc5;
+}
+
+.informacoes-abas .descricao{
+    font-weight: 400;
+    font-size: 16px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao span{
+    color: rgb(240, 133, 240);
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{    
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+    border: 1px solid rgb(238, 11, 238);
+}
+
+.redes-sociais .curriculo{
+    background-color: #6b63b5;
+}
+
+.redes-sociais .linkedin{
+    background-color: #6b63b5;
+}
+
+.redes-sociais .github{
+    background-color: #6b63b5;
+}
